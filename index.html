@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -17,6 +17,7 @@
                 <h2>Garden Galleria</h2>
             </div>
 
+            <button class="menu-toggle">☰</button>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#clubs">Clubs</a></li>
@@ -26,8 +27,9 @@
         </nav>
     </header>
 
-    
+
     <div class="container">
+        <button class="sidebar-toggle">☰ Categories</button>
         <aside class="sidebar">
             <h3>Categories</h3>
             <ul>
@@ -103,7 +105,7 @@
             </div>
         </aside>
 
-        
+
         <main class="clubs-section" id="clubs">
 
 
@@ -234,7 +236,7 @@
 
 
 
-            
+
             <div class="club-card">
                 <img src="illuzion.jpg" alt="Illuzion Luxe Club">
                 <div class="club-info">
@@ -251,7 +253,7 @@
             </div>
 
 
-            
+
             <div class="club-card">
                 <img src="oscar.jpg" alt="Oscar Luxe Club">
                 <div class="club-info">
@@ -376,12 +378,12 @@
         </main>
     </div>
 
-    
+
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p><strong>Phone:</strong> +91 880 211 411</p>
+                <p><strong>Phone:</strong> +91 880 211 4116</p>
                 <p><strong>Email:</strong> armaanmansuri0707@gmail.com</p>
                 <p><strong>Queries:</strong> support@gardengalleria.in</p>
             </div>
@@ -403,8 +405,27 @@
                 </ul>
             </div>
         </div>
-        <p class="footer-bottom">© 2025 Garden Galleria, Noida. All Rights Reserved.</p>
+        <p class="footer-bottom">© 2026 Garden Galleria, Noida. All Rights Reserved.</p>
     </footer>
+
+
+    <script>
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        const sidebarToggle = document.querySelector(".sidebar-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        sidebarToggle.addEventListener("click", function () {
+            sidebar.classList.toggle("active");
+        });
+
+    </script>
 </body>
 
 </html>
